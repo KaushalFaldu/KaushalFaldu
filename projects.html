@@ -19,6 +19,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .fixed-size-img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body class="d-flex flex-column h-100 bg-light">
@@ -37,7 +44,7 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
                         <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                       
+
 
 
                     </ul>
@@ -48,82 +55,98 @@
         <section class="py-5">
             <div class="container px-5 mb-5">
                 <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    <h1 class="display-5 fw-bolder mb-0">
+                        <span class="text-gradient d-inline">Projects</span>
+                    </h1>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Project Card 1-->
+                        <!-- Project Card 1 -->
                         <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                             <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
+                                <div class="row align-items-center">
+                                    <div class="col-md-7 p-5">
                                         <h2 class="fw-bolder">ISRO (Satellite Project)</h2>
-                                        <p> As the Lead of the software team for Marwadi University's satellite project,
-                                            I played a key role in
-                                            collaborating on the development of both ground station and
-                                            satellite-specific software. Developed a personalized dashboard
+                                        <p>
+                                            As the Lead of the software team for Marwadi University's satellite project,
+                                            I played a key role in collaborating on the development of both ground
+                                            station and satellite-specific software. Developed a personalized dashboard
                                             system enabling user to effortlessly generate automated image. Efficiently
-                                            managed a massive MySQL database of 2 million
-                                            data and built a robust backend system to automate manual tasks, drastically
-                                            reducing manual work from 18 hour to just
-                                            35 secs. </p>
+                                            managed a massive MySQL database of 2 million data and built a robust
+                                            backend system to automate manual tasks, drastically reducing manual work
+                                            from 18 hour to just 35 secs.
+                                        </p>
                                     </div>
-                                    <img class="img-fluid" src="assets/ST.png" alt="..." />
+                                    <div class="col-md-5 text-center">
+                                        <img class="fixed-size-img" src="assets/ST.png" alt="..." />
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Project Card 2 -->
                         <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                             <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <h2 class="fw-bolder"> RFID Based Payment System</h2>
-                                        <p> A Led, managed, and developed the complete project life cycle, from
-                                            requirement gathering to
-                                            deployment and maintenance, for full-stack projects. The successful
-                                            execution resulted in a substantial 50% increase in client
-                                            website traffic. Meticulously analyzed performance and identified areas for
-                                            improvement.
+                                <div class="row align-items-center">
+                                    <div class="col-md-7 p-5">
+                                        <h2 class="fw-bolder">RFID Based Payment System</h2>
+                                        <p>
+                                            Led, managed, and developed the complete project life cycle, from
+                                            requirement gathering to deployment and maintenance, for full-stack
+                                            projects. The successful execution resulted in a substantial 50% increase in
+                                            client website traffic. Meticulously analyzed performance and identified
+                                            areas for improvement.
                                             <br>
                                             <b>Registered: Copyrights, Design-Patent</b>
                                         </p>
                                     </div>
-                                    <img class="img-fluid" src="assets/RFIDIMg.png" alt="..." />
+                                    <div class="col-md-5 text-center">
+                                        <img class="fixed-size-img" src="assets/RFIDIMg.png" alt="..." />
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Project Card 3 -->
                         <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                             <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
+                                <div class="row align-items-center">
+                                    <div class="col-md-7 p-5">
                                         <h2 class="fw-bolder">AI Plagiarism Checker</h2>
-                                        <p> This project uses NLP to recommend similar codes based on user input by
+                                        <p>
+                                            This project uses NLP to recommend similar codes based on user input by
                                             calculating cosine similarity between TF-IDF vectors of codes. It reads
                                             codes from a CSV, preprocesses them (removes punctuation, tokenizes, removes
-                                            stopwords, stems), and vectorizes them using sklearn's TF-IDF.Finally, it
+                                            stopwords, stems), and vectorizes them using sklearn's TF-IDF. Finally, it
                                             prints codes with similarity scores above 0.8. Libraries used: csv for file
                                             operations, string for text processing, nltk for NLP preprocessing, and
-                                            sklearn for TF-IDF and similarity calculations. </p>
+                                            sklearn for TF-IDF and similarity calculations.
+                                        </p>
                                     </div>
-                                    <img class="img-fluid" src="assets/AI.png" alt="..." />
+                                    <div class="col-md-5 text-center">
+                                        <img class="fixed-size-img" src="assets/AI.png" alt="..." />
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Project Card 4 -->
                         <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                             <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
+                                <div class="row align-items-center">
+                                    <div class="col-md-7 p-5">
                                         <h2 class="fw-bolder">Air Color Playbord</h2>
-                                        <p>This mini project, Air Vision, demonstrates converting imagination into real
+                                        <p>
+                                            This mini project, Air Vision, demonstrates converting imagination into real
                                             effects using Python. Utilizing OpenCV for image processing and Pygame for
                                             rendering, it captures real-time video and applies dynamic filters or
-                                            effects, turning abstract ideas into tangible visual outputs. </p>
+                                            effects, turning abstract ideas into tangible visual outputs.
+                                        </p>
                                     </div>
-                                    <img class="img-fluid" src="assets/Air.png" alt="..." />
+                                    <div class="col-md-5 text-center">
+                                        <img class="fixed-size-img" src="assets/Air.png" alt="..." />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Project Card 2-->
-
+                        <!-- Project Card 2 -->
                     </div>
                 </div>
             </div>
